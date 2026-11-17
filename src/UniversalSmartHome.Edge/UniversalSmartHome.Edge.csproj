@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-UniversalSmartHome.Edge-e6915113-7800-42d9-84d9-233f8bede0a7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UniversalSmartHome.Application\UniversalSmartHome.Application.csproj" />
+    <ProjectReference Include="..\UniversalSmartHome.Infrastructure\UniversalSmartHome.Infrastructure.csproj" />
+    <ProjectReference Include="..\UniversalSmartHome.Connectors.HomeAssistant\UniversalSmartHome.Connectors.HomeAssistant.csproj" />
+    <ProjectReference Include="..\UniversalSmartHome.Connectors.MCP\UniversalSmartHome.Connectors.MCP.csproj" />
+  </ItemGroup>
+</Project>
